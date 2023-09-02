@@ -28,7 +28,7 @@
                 "--lr=5e-4",
                 "--min-lr=1e-6",
                 "--no-model-ema",
-                "--no-amp,"
+                "--no-amp"
             ]
 
         }
