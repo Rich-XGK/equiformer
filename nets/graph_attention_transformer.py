@@ -875,7 +875,7 @@ class GraphAttentionTransformer(torch.nn.Module):
         #edge_length_embedding = sin_pos_embedding(x=edge_length, 
         #    start=0.0, end=self.max_radius, number=self.number_of_basis, 
         #    cutoff=False)
-        edge_length_embedding = self.rbf(edge_length)
+        edge_length_embedding = self.rbf(edge_length)   # TODO: What's rbf and how to compute?
         edge_degree_embedding = self.edge_deg_embed(atom_embedding, edge_sh, 
             edge_length_embedding, edge_src, edge_dst, batch)
         node_features = atom_embedding + edge_degree_embedding
