@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Loading the required module
-source /etc/profile
-module load anaconda/2021a
+# source /etc/profile
+# module load anaconda/2021a
 
-export PYTHONNOUSERSITE=True    # prevent using packages from base
-source activate th102_cu113_tgconda
+# export PYTHONNOUSERSITE=True    # prevent using packages from base
+# source activate equiformer
 
 python main_qm9.py \
     --output-dir 'models/qm9/equiformer/se_l2/target@4/' \
